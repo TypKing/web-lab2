@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    background: url("../images/wallpaper.png") no-repeat,
+    #fff url("../images/wallpaper_2.png") repeat-y 100%;
+    background-size: cover;
+}
+.container {
+    font-family: "Franklin Gothic Demi", sans-serif;
+    padding-left: 10px;
+    row-gap: 10px;
+}
+
+.header {
+    font-family: "Franklin Gothic Demi", fantasy;
+    background-color: #325b7c;
+    border: 4px outset #192058;
+    opacity: 90%;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: 0.6s;
+}
+.header a{
+    display: block;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+}
+/*.header .lab-header{*/
+/*    text-align: left;*/
+/*    transition: 0.6s;*/
+/*}*/
+/*.header .lab-header:hover{*/
+/*    color: #790000;*/
+/*    font-size: 68px;*/
+/*}*/
+.block{
+    page-break-after: always;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 75px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.block .display-lab {
+    font-family: "Franklin Gothic Heavy", sans-serif;
+    margin-right: 50px;
+    width: 450px;
+    padding: 10px;
+    background-color: #325b7c;
+    border: 4px #192058;
+    border-collapse: collapse;
+    border-radius: 10px;
+    opacity: 90%;
+    font-size: 24px;
+}
+.block .update {
+    margin-left: -40px;
+    font-family: "Franklin Gothic Heavy", sans-serif;
+    width: 250px;
+    padding: 10px;
+    background-color: #325b7c;
+    border: 4px #192058;
+    border-collapse: collapse;
+    border-radius: 10px;
+    opacity: 90%;
+    font-size: 24px;
+    justify-items: center;
+}
+
+.update-sheet {
+    resize: none;
+    margin-left: -75px;
+    font-size: 15px;
+    word-wrap: break-word;
+    background-color: antiquewhite;
+    text-align: justify;
+    border: 4px outset #325b7c;
+    padding: 5px;
+    line-height: 25px;
+    opacity: 80%;
+    width: 300px;
+    height: 700px;
+}
+.btn {
+    margin-right: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 470px;
+    padding: 10px;
+    background-color: #325b7c;
+    border: 4px outset #192058;
+    border-collapse: collapse;
+    border-radius: 10px;
+    opacity: 90%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background-color;
+}
+.btn:hover{
+    background-color: #437196;
+}
+.is_overlay{ display: block; width: 100%; height: 100%; }
+#trailer {
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    overflow: hidden;
+}
+
+#trailer > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto; height: auto;
+}
+@media (min-aspect-ratio: 16/9) {
+    #trailer > video { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+    #trailer > video { width: 300%; left: -100%; }
+}
+/* Если есть поддержка object-fit (Chrome/Chrome для Android, Safari в iOS 8 и Opera), используем его: */
+@supports (object-fit: cover) {
+    #trailer > video {
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,117 @@
+.politicalCoordinates{
+    transition: 0.5s;
+    margin-right: 30px;
+}
+.politicalCoordinates:hover{
+    transform: scale(1.05);
+}
+.form{
+    transition: 0.5s;
+    font-family: "Franklin Gothic Demi Cond", fantasy;
+    font-size: 24px;
+    border-radius: 10px;
+    border-style: outset;
+    border-color: #3a6383;
+    background-color: #437196;
+    opacity: 90%;
+    margin-right: 30px;
+    margin-top: 30px;
+    padding: 5px;
+    width: 300px;
+    height: 350px;
+}
+.form:hover{
+    transform: scale(1.05);
+}
+.form .selectBlock{
+    text-align: left;
+    margin: 10px;
+    font-size: 18px;
+    padding: 10px;
+}
+.text{
+    text-align: center;
+    background-color: #6092ba;
+    border-style: outset;
+    border-radius: 9px;
+}
+.text:hover{
+    background-color: #5185a9;
+}
+.resultForm{
+    transition: 0.5s;
+    font-family: "Franklin Gothic Demi Cond", sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: #437196;
+    opacity: 90%;
+}
+.resultForm:hover{
+    transform: scale(1.05);
+}
+select, input{
+    font-weight: bold;
+    text-align: left;
+    margin: 2px;
+    font-size: 18px;
+    padding: 2px;
+    width: 150px;
+}
+select{
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    text-decoration: none;
+}
+.button{
+    width: 100px;
+}
+.input{
+    text-align: left;
+    outline: none;
+    text-decoration: none;
+}
+.canvas{
+    margin-top: 50px;
+    transition: 0.5s;
+    border-style: outset;
+    border-radius: 9px;
+    border-color: #3a6383;
+}
+.canvas:hover{
+    transform: scale(1.05);
+}
+.selectBtn{
+    width: 45px;
+    height: 22.5px;
+    outline: none;
+    text-decoration: none;
+}
+.selectBtn:active{
+    border-style: inset;
+}
+.linkBack{
+    transition: 0.5s;
+    font-family: "Franklin Gothic Demi Cond", fantasy;
+    font-size: 24px;
+    border-radius: 10px;
+    border-style: outset;
+    border-color: #3a6383;
+    text-decoration: none;
+    color: black;
+    background-color: #437196;
+    opacity: 90%;
+    margin-right: 30px;
+    margin-top: 30px;
+    padding: 5px;
+    width: 300px;
+}
+.linkBack:hover{
+    transform: scale(1.05);
+    background-color: #3c5f80;
+}
+.linkBack:active{
+    transform: scale(1.05);
+    background-color: #242f49;
+}
